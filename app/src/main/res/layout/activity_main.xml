@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="237dp"
+                android:layout_height="184dp"
+                app:srcCompat="@drawable/microscope_test_tubes_and_atom_science_vector_illustration" />
+
+            <TextView
+                android:id="@+id/tvTestLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Test Layout"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvQ1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="1. ¿Cuáles son los atributos principales de cualquier Layout?"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/checkboxQ1Ans1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="id" />
+
+            <CheckBox
+                android:id="@+id/checkboxQ1Ans2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="width" />
+
+            <CheckBox
+                android:id="@+id/checkboxQ1Ans3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="height" />
+
+            <CheckBox
+                android:id="@+id/checkboxQ1Ans4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="gravity" />
+
+            <TextView
+                android:id="@+id/tvQ2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. ¿Cuál layout nos permite sobreponer elementos de forma organica?"
+                android:textSize="20dp"
+                />
+            <RadioButton
+                android:id="@+id/rbtnQ2Ans1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RelativeLayout"/>
+            <RadioButton
+                android:id="@+id/rbtnQ2Ans2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FrameLayout"/>
+            <RadioButton
+                android:id="@+id/rbtnQ2Ans3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LinearLayout"/>
+            <RadioButton
+                android:id="@+id/rbtnQ2Ans4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ConstraintLayout"/>
+
+            <TextView
+                android:id="@+id/tvQ3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. ¿Cuál layout permite mayor flexibilidad en la organización de los elementos"
+                android:textSize="20sp"
+                />
+            <RadioButton
+                android:id="@+id/rbtnQ3Ans1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LinearLayout"
+                />
+            <RadioButton
+                android:id="@+id/rbtnQ3Ans2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ConstraintLayout"
+                />
+            <RadioButton
+                android:id="@+id/rbtnQ3Ans3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RelativeLayout"
+                />
+            <RadioButton
+                android:id="@+id/rbtnQ3Ans4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FrameLayout"
+                />
+
+            <TextView
+                android:id="@+id/tvQ4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. ¿Cuáles Layout permiten ordenar sus elementos por medio del LayoutGravity?}"
+                android:textSize="20sp"
+                />
+            <CheckBox
+                android:id="@+id/checkboxQ4Ans1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="id" />
+
+            <CheckBox
+                android:id="@+id/checkboxQ4Ans2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="width" />
+
+            <CheckBox
+                android:id="@+id/checkboxQ4Ans3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="height" />
+
+            <CheckBox
+                android:id="@+id/checkboxQ4Ans4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="gravity" />
+
+            <TextView
+                android:id="@+id/tvQ5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. ¿Cuál es la principal caracterisca que permite una mayor responsividad de los elementos dentro de un relativeLayout?"
+                android:textSize="20sp"
+                />
+            <RadioButton
+                android:id="@+id/rbtnQ5Ans1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="layout_margin"/>
+            <RadioButton
+                android:id="@+id/rbtnQ5Ans2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="layout_align"/>
+            <RadioButton
+                android:id="@+id/rbtnQ5Ans3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="layout_gravity"/>
+            <RadioButton
+                android:id="@+id/rbtnQ5Ans4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="padding"/>
+
+            <Button
+                android:id="@+id/btnEnviar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Enviar "
+                android:textSize="24sp"
+                android:backgroundTint="#2196F3"
+                />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
