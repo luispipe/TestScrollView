@@ -24,7 +24,7 @@
         android:gravity="center"
         android:text="Reprobaste ¡SUERTE PARA LA PROXIMA!"
         android:textColor="#111840"
-        android:textSize="60sp"
+        android:textSize="50sp"
         android:textStyle="bold" />
 
     <Button

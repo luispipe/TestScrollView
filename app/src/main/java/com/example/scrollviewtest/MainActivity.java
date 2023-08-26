@@ -10,8 +10,8 @@ import android.widget.CheckBox;
 import android.widget.RadioButton;
 
 public class MainActivity extends AppCompatActivity {
-    //Score va a llevar la nota del Test
-    int score;
+    //Score va a llevar la nota del Test y int es para número enteros
+    int calificacion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,26 +54,144 @@ public class MainActivity extends AppCompatActivity {
         Intent pass= new Intent(getApplicationContext(), PassActivity.class);
         Intent fail= new Intent(getApplicationContext(), FailActivity.class);
 
+        //Lógica funcionamiento radio button
+        q2Ans1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                q2Ans2.setChecked(false);
+                q2Ans3.setChecked(false);
+                q2Ans4.setChecked(false);
+            }
+        });
+        q2Ans2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                q2Ans1.setChecked(false);
+                q2Ans3.setChecked(false);
+                q2Ans4.setChecked(false);
+            }
+        });
+        q2Ans3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                q2Ans2.setChecked(false);
+                q2Ans1.setChecked(false);
+                q2Ans4.setChecked(false);
+            }
+        });
+        q2Ans4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                q2Ans2.setChecked(false);
+                q2Ans3.setChecked(false);
+                q2Ans1.setChecked(false);
+            }
+        });
+        q3Ans1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                q3Ans2.setChecked(false);
+                q3Ans3.setChecked(false);
+                q3Ans4.setChecked(false);
+            }
+        });
+
+        q3Ans2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                q3Ans1.setChecked(false);
+                q3Ans3.setChecked(false);
+                q3Ans4.setChecked(false);
+            }
+        });
+        q3Ans3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                q3Ans2.setChecked(false);
+                q3Ans1.setChecked(false);
+                q3Ans4.setChecked(false);
+            }
+        });
+        q3Ans4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                q3Ans2.setChecked(false);
+                q3Ans3.setChecked(false);
+                q3Ans1.setChecked(false);
+            }
+        });
+        q5Ans1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                q5Ans2.setChecked(false);
+                q5Ans3.setChecked(false);
+                q5Ans4.setChecked(false);
+            }
+        });
+
+
+        q5Ans2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                q5Ans1.setChecked(false);
+                q5Ans3.setChecked(false);
+                q5Ans4.setChecked(false);
+            }
+        });
+        q5Ans3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                q5Ans2.setChecked(false);
+                q5Ans1.setChecked(false);
+                q5Ans4.setChecked(false);
+            }
+        });
+        q5Ans4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                q5Ans2.setChecked(false);
+                q5Ans3.setChecked(false);
+                q5Ans1.setChecked(false);
+            }
+        });
+
         //Lógica si el usuario acierta 3 de 5 aprueba
 
         enviar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                score=0;
+                calificacion=0;
                 //Verificar respuesta 1
                 if (!q1Ans1.isChecked() && q1Ans2.isChecked()
                     && q1Ans3.isChecked() && !q1Ans4.isChecked()
                 ){
                     //score++ es igual a sumarle 1 a el valor que tiene score
-                    score++;
+                    calificacion++;
                 }
                 //Verificar respuesta 2
+                if (q2Ans2.isChecked()){
+                    calificacion++;
+                }
 
                 //Verificar respuesta 3
-
+                if (q3Ans3.isChecked()){
+                    calificacion++;
+                }
                 //Verificar respuesta 4
-
+                if (!q4Ans1.isChecked() && q4Ans2.isChecked()
+                && q4Ans3.isChecked() && !q4Ans4.isChecked()){
+                    calificacion++;
+                }
                 //Verificar respuesta 5
+                if (q5Ans2.isChecked()){
+                    calificacion++;
+                }
+
+                if (calificacion>=3){
+                    startActivity(pass);
+                }else{
+                    startActivity(fail);
+                }
 
             }
         });

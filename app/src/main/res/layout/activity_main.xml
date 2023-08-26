@@ -127,32 +127,31 @@
                 android:id="@+id/tvQ4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="4. ¿Cuáles Layout permiten ordenar sus elementos por medio del LayoutGravity?}"
-                android:textSize="20sp"
-                />
+                android:text="4. ¿Cuáles Layout permiten ordenar sus elementos por medio del LayoutGravity?"
+                android:textSize="20sp" />
             <CheckBox
                 android:id="@+id/checkboxQ4Ans1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="id" />
+                android:text="RelativeLayout" />
 
             <CheckBox
                 android:id="@+id/checkboxQ4Ans2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="width" />
+                android:text="FrameLayout" />
 
             <CheckBox
                 android:id="@+id/checkboxQ4Ans3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="height" />
+                android:text="LinearLayout" />
 
             <CheckBox
                 android:id="@+id/checkboxQ4Ans4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="gravity" />
+                android:text="ConstraintLayout" />
 
             <TextView
                 android:id="@+id/tvQ5"
